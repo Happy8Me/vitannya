@@ -19,7 +19,7 @@
             <Experience />
             <Education />
             <AddInfo />
-        </div>
+        </div> 
     </div>
     
 </div>   

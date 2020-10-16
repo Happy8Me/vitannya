@@ -1,14 +1,12 @@
 <template>
-    <div class="hello">
-
+    <div class="hello"> 
+        <div class="myPhoto" :style="{ backgroundImage: 'url('+ photo +')' }">
             <div class="vitannya">
                 <div>  <img :src="seagull" alt="">  <h1> {{ hello }} </h1> </div>
                 <p> {{ info }} </p>
                 <p> {{ name }} </p>
             </div>
-            <div class="myPhoto">
-                <img :src="photo" alt="photo of me">
-            </div>
+        </div>
         <div class="flex room-container">
             <BottomMenu /> 
         </div>
@@ -19,12 +17,12 @@
 <script>
 
 import BottomMenu from '../components/BottomMenu'
-import photo from "../assets/me11.png"
+import photo from "../assets/me11.jpg"
 import seagull from '../assets/seagull1.png'
 
 export default {
     name: 'Home',
-        components: {
+        components: { 
             BottomMenu
         },
     data() {
@@ -41,13 +39,12 @@ export default {
 
 <style lang="sass" scoped>
 .vitannya
-    position: absolute
-    width: 90%
-    left: 5%
+    p
+        margin: 0 0 7px 0
     div
         display: flex
         position: relative
-        margin: 0 0 3vh 0px
+        margin: 10% 10% 15% 10%
         image-orientation: 
         img 
             position: absolute
@@ -60,14 +57,18 @@ export default {
 
 .myPhoto 
     margin: 2% 0
-    img
-        margin: auto
-p 
-    text-align: left
-    font-size: 20px
-.flex 
+    width: auto
+    height: 400px
+    background-repeat: no-repeat
+    background-size: auto 400px 
+    background-position: left
     display: flex
     justify-content: center
+p 
+    text-align: center
+    font-size: 20px
+    text-shadow: 2px 2px 3px #000000
+    color: #ffffff
 
 .room-container
     flex-wrap: wrap

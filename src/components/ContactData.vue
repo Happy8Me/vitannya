@@ -32,13 +32,14 @@ export default {
  data() {
      return {
          contacts: [
-                {type: 'Address', data: 'https://goo.gl/maps/ggBvQt5naWQMeHjz8', name: 'Odesa, Ukraine'},
+                {type: 'Address', data: 'https://goo.gl/maps/ggBvQt5naWQMeHjz8', name: 'Odesa, Ukraine (ready to relocate)'},
                 {type: 'Email', data: 'mailto:iryna.hladchenko.iryna@gmail.com', name: 'iryna.hladchenko.iryna@gmail.com'},
                 {type: 'Phone', data: 'tel:+380935623590', name: '+380 93 562 3590'},
                 {type: 'GitHub', data: 'https://github.com/Happy8Me', name: 'Iryna Hladchenko (Happy8Me)'},
                 {type: 'LinkedIn', data: 'https://www.linkedin.com/in/iryna-h-65a63312b/', name: 'Iryna_Hladchenko'},
                 {type: 'Facebook', data: 'https://www.facebook.com/IrynaHladchenko/', name: 'Ирина Гладченко'},
-                {type: 'Telegram', data: 'https://telegram.me/@Iryna_Hladchenko', name: 'Iryna_Hladchenko'}
+                {type: 'Telegram', data: 'https://telegram.me/@Iryna_Hladchenko', name: 'Iryna_Hladchenko'},
+                {data: 'https://vitannya.herokuapp.com/#/'}
             ],
      }
  },
