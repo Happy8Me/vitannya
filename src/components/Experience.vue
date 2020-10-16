@@ -1,0 +1,44 @@
+<template>
+<div class="experience">
+    
+    <h3> Experience </h3>
+
+    <div v-for="exp in experience" :key="exp.year">
+        <p class="year"> {{ exp.organisation }} <span>{{ exp.year }}</span> </p>
+        <p> {{ exp.position }} </p>
+    </div>
+
+</div>
+   
+</template>
+
+<script>
+export default {
+    name: 'Experience',
+    data(){
+        return {
+            experience: [
+                {year: '2018 – Present', position: 'Customer Support Agent (English)', organisation: 'SelectSpecs.com'},
+                {year: '2017 – 2018', position: 'Author of educational posts and travel guides', organisation: 'Freelance'},
+                {year: '2012 – 2017', position: 'Economist', organisation: 'Misto Bank'}  
+            ],
+        }
+    }
+}
+</script>
+
+<style lang='sass' scoped>
+h3
+    font-size: 16px
+    font-weight: bold 
+    margin: 15px 0 5px 0
+p
+    font-size: 13px
+    margin: 2%
+    text-align: left
+.year
+    font-weight: bold
+    display: flex
+    justify-content: space-between
+
+</style>
