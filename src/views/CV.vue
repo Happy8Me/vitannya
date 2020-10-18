@@ -70,7 +70,6 @@ export default {
         text-align: center
         padding: 15px
     .wrapper-right
-        height: 100%
         background-color: rgba(165, 209, 244, 0.80)
         padding: 15px
 

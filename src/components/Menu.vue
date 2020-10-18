@@ -21,7 +21,7 @@ export default {
     name: 'Menu',
     data() {
         return {
-            menuItems: [{title: 'Home', path: '/'}, {title: 'CV', path: '/cv'}, {title: 'Contacts', path: '/contacts'}, {title: 'Sertificates', path: '/sertificates'}],
+            menuItems: [{title: 'Home', path: '/'}, {title: 'CV', path: '/cv'}, {title: 'Contacts', path: '/contacts'}, {title: 'Certificates', path: '/certificates'}],
             showNavigation: false,
             showSidepanel: false
         }

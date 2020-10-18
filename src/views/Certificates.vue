@@ -6,7 +6,7 @@
 import LightBox from '../components/LightBox.vue'
 
 export default {
-  name: 'Sertificates',
+  name: 'Certificates',
   components: {
     LightBox
   }

@@ -27,7 +27,7 @@ export default {
         },
     data() {
         return {
-            info: 'I am a Front-end developer',
+            info: "I am a Front - end developer",
             name: 'Iryna Hladchenko',
             photo,
             seagull,
@@ -38,21 +38,25 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+
 .vitannya
+    margin: 8% auto
     p
         margin: 0 0 7px 0
+        font-family:  'Poiret One', cursive
+        font-size: 20px
+        font-weight: bold
     div
-        display: flex
         position: relative
-        margin: 10% 10% 15% 10%
+        margin: 10% 10% 22% 10%
         image-orientation: 
         img 
             position: absolute
             width: 25px
-            left: 31px
-            top: 17px
+            left: 33px
+            top: -19px
         h1 
-            font-family:  'Caveat', cursive
+            font-family:  'Poiret One', cursive
             font-size: 55px
 
 .myPhoto 
@@ -72,5 +76,19 @@ p
 
 .room-container
     flex-wrap: wrap
+
+
+@media only screen and (max-width: 700px) and (min-width: 500px)
+    .myPhoto 
+       justify-content: flex-end
+    .vitannya
+        margin: auto 5%
    
+@media (max-width: 500px) 
+    .myPhoto 
+       justify-content: center  
+    .vitannya
+        margin: 2% auto
+        div
+            margin-bottom: 100%
 </style>
