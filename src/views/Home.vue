@@ -90,5 +90,5 @@ p
     .vitannya
         margin: 2% auto
         div
-            margin-bottom: 100%
+            margin-bottom: 143%
 </style>
