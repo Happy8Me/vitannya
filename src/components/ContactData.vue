@@ -15,7 +15,7 @@
 
 <div v-else>
     <md-list>
-        <h3 class="md-title">Contacts</h3>
+        <h3 class="md-title title-CV">Contacts</h3>
         
         <div v-for="contact in contacts" :key="contact.type">
             <md-subheader>{{contact.type}} </md-subheader>
@@ -39,7 +39,7 @@ export default {
                 {type: 'LinkedIn', data: 'https://www.linkedin.com/in/iryna-h-65a63312b/', name: 'Iryna_Hladchenko'},
                 {type: 'Facebook', data: 'https://www.facebook.com/IrynaHladchenko/', name: 'Ирина Гладченко'},
                 {type: 'Telegram', data: 'https://telegram.me/@Iryna_Hladchenko', name: 'Iryna_Hladchenko'},
-                {data: 'https://vitannya.herokuapp.com/#/'}
+                {type: 'My application', data: 'https://vitannya.herokuapp.com/#/', name: 'https://vitannya.herokuapp.com/'}
             ],
      }
  },
@@ -54,16 +54,8 @@ export default {
 <style lang="sass" scoped>
 .contacts
     width: 550px
-  
-.md-title
-    font-size: 16px
-    font-weight: bold 
-    margin: 5px 0
-    text-align: center
-    color: black
 .md-theme-default a:not(.md-button)
     color: black
-    font-size: 13px
     &:hover
         color: rgb(126, 183, 228)
         text-decoration: none
@@ -71,10 +63,19 @@ tbody .md-table-row td
     cursor: pointer
 .md-list.md-theme-default
     text-align: left    
-    padding: 0
 .md-subheader 
     min-height: 20px
+    font-size: 11px
     padding: 0
 .md-subheader.md-theme-default
     color: rgb(194, 189, 189)
+.contacts-CV
+    padding-left: 5px
+.title-CV
+    font-size: 16px
+    font-weight: bold 
+    margin: 0 0 20px 0
+    text-align: left
+    border-bottom: 1px dashed #808080
+    padding-bottom: 3px
 </style>

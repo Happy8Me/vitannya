@@ -61,30 +61,34 @@ export default {
     display: flex
     justify-content: center
 .wrapper 
-    padding: 0 7px
     display: flex
     max-width: 700px
     margin: 3% 
-    font-size: 11px
+    font-size: 12px
     border: 1px solid rgba(165, 209, 244, 0.80)
     .wrapper-left
         text-align: center
         padding: 15px
-        margin-right: 20px
     .wrapper-right
+        background-color: rgba(165, 209, 244, 0.80)
         padding: 15px
+
+.md-list.md-theme-default
+    background-color: #83c1f1b5
+
 .photo
     display: flex
     justify-content: center
     padding: 10px
     img 
-        width: 150px
-        height: 150px
-        border: 3px solid white
-        border-radius: 50%
+        width: 125px
+        height: 160px
+        border: 5px solid white
+        border-radius: 3px
 
 .name
     padding-bottom: 20px
+    border-bottom: 1px dashed rgb(162, 162, 162)
     h1
         margin: 20px 0 10px 0
         font-size: 22px

@@ -17,7 +17,6 @@ export default {
         return {
             education: [
                 {year: 'April 2020 - September 2020', school: 'Hillel IT School', subject: 'Front-end Pro (JavaScript)'},
-                {year: '2015', school: 'Hillel IT School', subject: 'Front-end Basic'},
                 {year: '2014 – 2015', school: 'London School of English', subject: 'CAE (C1 Advanced)'},
                 {year: '2007 – 2012', school: 'Odessa National Economics University', subject: 'Master in Finance and Credit'}
             ]
@@ -30,13 +29,16 @@ export default {
 h3
     font-size: 16px
     font-weight: bold 
-    margin: 15px 0 
+    margin: 30px 0 20px 0
+    text-align: left
+    border-bottom: 1px dashed #808080
+    padding-bottom: 3px
 p
-    font-size: 13px
-    margin: 2% 
+    font-size: 11px
+    margin: 0
     text-align: left
 .year
-    font-weight: bold
+    font-weight: 800
     display: flex
     justify-content: space-between
 </style>

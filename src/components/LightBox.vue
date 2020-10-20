@@ -23,9 +23,8 @@
 
 <script>
 
-import img1 from '../assets/cae.jpg'
-import img2 from '../assets/en.png'
-import img3 from '../assets/fe.jpg'
+import img1 from '../assets/en.png'
+import img2 from '../assets/cae.jpg'
 
 import CoolLightBox from 'vue-cool-lightbox'
 import '../../node_modules/vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
@@ -47,12 +46,7 @@ export default {
           // title: 'In nature, nothing is perfect and everything is perfect',
           // description: "Photo by Lucas",
           src: img2,
-        },
-           {
-          // title: 'In nature, nothing is perfect and everything is perfect',
-          // description: "Photo by Lucas",
-          src: img3,
-        },
+        }
       ],
       index: null
     };

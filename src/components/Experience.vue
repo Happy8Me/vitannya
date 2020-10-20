@@ -31,13 +31,16 @@ export default {
 h3
     font-size: 16px
     font-weight: bold 
-    margin: 15px 0 5px 0
+    margin: 30px 0 20px 0
+    text-align: left
+    border-bottom: 1px dashed #808080
+    padding-bottom: 3px
 p
-    font-size: 13px
-    margin: 2%
+    font-size: 11px
+    margin: 0
     text-align: left
 .year
-    font-weight: bold
+    font-weight: 800
     display: flex
     justify-content: space-between
 

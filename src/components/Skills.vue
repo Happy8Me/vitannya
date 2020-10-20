@@ -10,9 +10,9 @@
 
     <h3>Languages</h3>
     <ul class="langua">
-        <div v-for="lang in languages" :key="lang.name">
+        <li v-for="lang in languages" :key="lang.name">
            <p class="l-item"> {{lang.name}} ( {{lang.level}} ) </p>  
-        </div>
+        </li>
     </ul>
 
 </div>
@@ -23,7 +23,7 @@ export default {
     name: 'Skills',
     data(){
         return{
-            skills: ['JavaScript/ES6', 'Vue.js/Vuex','DOM', 'HTML', 'CSS/SASS/SCSS', 'jQuery', 'Promise', 'Node.js (basic)', 'TypeScript', 'Avocode/Photoshop'],
+            skills: ['JavaScript / ES6', 'Vue.js / Vuex', 'Git', 'REST', 'HTML5', 'CSS3/SASS/SCSS', 'AJAX', 'Node.js (basic)', 'TypeScript', 'Photoshop / Avocode'],
             languages: [{name: 'Ukrainian', level: 'native'}, {name: 'Russian', level: 'native'}, {name: 'English', level: 'advanced'}],
         }
     }
@@ -33,10 +33,11 @@ export default {
 <style lang="sass" scoped>
 
 ul
-    padding: 0
+    list-style: disc
+    color: black
     p
         color: black
-        font-size: 13px
+        font-size: 11px
         text-align: left
         margin: 3px 0
 h3
@@ -44,6 +45,9 @@ h3
     font-weight: bold 
     margin: 5px 0
     color: black
-   
+    text-align: left
+    border-bottom: 1px dashed #808080
+    margin: 15px 0 20px 0   
+    padding-bottom: 3px
 
 </style>
