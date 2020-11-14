@@ -67,7 +67,7 @@ export default {
     background-size: auto 400px 
     background-position: left
     display: flex
-    justify-content: center
+    // justify-content: center
 p 
     text-align: center
     font-size: 20px

@@ -63,6 +63,7 @@ export default {
 .wrapper 
     padding: 0 7px
     display: flex
+    width: 700px
     max-width: 700px
     margin: 3% 
     font-size: 11px

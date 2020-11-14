@@ -61,6 +61,8 @@ export default {
         text-decoration: none
 tbody .md-table-row td
     cursor: pointer
+.md-table
+    display: block
 .md-list.md-theme-default
     text-align: left    
 .md-subheader 
@@ -78,4 +80,15 @@ tbody .md-table-row td
     text-align: left
     border-bottom: 1px dashed #808080
     padding-bottom: 3px
+
+@media (max-width: 500px) 
+    .contacts
+        width: 315px
+    .md-table-row
+        display: block
+        td
+            display: block 
+            border: 0
+            height: 100%
+            background-color: rgba(165, 209, 244, 0.30)
 </style>

@@ -22,7 +22,7 @@ export default {
 <style lang="sass" scoped>
 a
     height: 12vh
-    box-shadow: 0px 0px 5px #86abd95c
+    box-shadow: 0px 0px 5px #d2e4f2
     border-radius: 50%
     min-width: 120px
 </style>
