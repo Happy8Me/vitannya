@@ -7,9 +7,9 @@
        <md-button v-for="item in menuItems" :key="item.path" :to="item.path" class="md-primary  md-xsmall-hide ">{{ item.title }} </md-button>
     </md-toolbar>
 
-    <md-drawer :md-active.sync="showNavigation" md-swipeable>
-        <md-list>
-            <md-button v-for="item in menuItems" :key="item.path" :to="item.path" class="md-primary">{{ item.title }} </md-button>
+    <md-drawer  :md-active.sync="showNavigation" md-swipeable>
+        <md-list @click="showNavigation = false">
+            <md-button @click="showNavigation = false" v-for="item in menuItems" :key="item.path" :to="item.path" class="md-primary">{{ item.title }} </md-button>
         </md-list>
     </md-drawer>
 
@@ -23,7 +23,7 @@ export default {
         return {
             menuItems: [{title: 'Home', path: '/'}, {title: 'CV', path: '/cv'}, {title: 'Contacts', path: '/contacts'}, {title: 'Certificates', path: '/certificates'}],
             showNavigation: false,
-            showSidepanel: false
+            showSidepanel: false,
         }
     },
 }
