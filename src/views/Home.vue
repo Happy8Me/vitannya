@@ -17,8 +17,8 @@
 <script>
 
 import BottomMenu from '../components/BottomMenu'
-import photo from "../assets/me11.jpg"
-import seagull from '../assets/seagull1.png'
+import photo from "../assets/img/me11.jpg"
+import seagull from '../assets/img/seagull1.png'
 
 export default {
     name: 'Home',

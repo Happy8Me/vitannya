@@ -27,7 +27,7 @@
 
 <script>
 
-import photo from '../assets/myPhoto.jpg';
+import photo from '../assets/img/myPhoto.jpg';
 import ContactData from '../components/ContactData';
 import Skills from '../components/Skills';
 import Education from '../components/Education';

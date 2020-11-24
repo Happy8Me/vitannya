@@ -23,8 +23,8 @@
 
 <script>
 
-import img1 from '../assets/en.png'
-import img2 from '../assets/cae.jpg'
+import img1 from '../assets/img/en.png'
+import img2 from '../assets/img/cae.jpg'
 
 import CoolLightBox from 'vue-cool-lightbox'
 import '../../node_modules/vue-cool-lightbox/dist/vue-cool-lightbox.min.css'

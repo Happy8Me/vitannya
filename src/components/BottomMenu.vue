@@ -12,7 +12,7 @@ export default {
     name: 'BottomMenu',
     data() {
         return {
-             menuItems: [{title: 'Home', path: '/'}, {title: 'CV', path: '/cv'}, {title: 'Contacts', path: '/contacts'}, {title: 'Certificates', path: '/certificates'}]
+             menuItems: [{title: 'Home', path: '/'}, {title: 'CV', path: '/cv'}, {title: 'Contacts', path: '/contacts'}, {title: 'Certificates', path: '/certificates'}, {title: 'Find Twins', path: '/find_twins'}]
         }
     },
 }
