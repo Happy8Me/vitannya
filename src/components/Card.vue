@@ -29,6 +29,7 @@ export default {
     position: relative
     border-radius: 12px
     margin: 10px
+    cursor: pointer
 
 .card-face 
     position: absolute
@@ -95,5 +96,4 @@ export default {
     .card 
         height: 88px
         width: 63px
-
 </style>

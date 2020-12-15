@@ -1,6 +1,6 @@
 <template>
   <div class="contacts-page">
-   <ContactData table = 'true' />
+    <ContactData />
 
   </div>
   
@@ -19,7 +19,13 @@ export default {
 
 <style lang="sass" scoped>
 .contacts-page
-  display: flex
-  justify-content: center
   margin: 5% 0
+.contacts
+  width: 600px
+@media (max-width: 700px) 
+    .contacts
+        width: 480px
+@media (max-width: 500px) 
+    .contacts
+        width: 280px
 </style>

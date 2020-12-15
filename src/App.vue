@@ -20,11 +20,13 @@ export default {
 body  
   margin: 0
   background-color: white
+  letter-spacing: .4px
 #app 
   margin: 0
   font-family: 'Montserrat', sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
+  padding-top: 48px
   text-align: center
+a
+  text-decoration: none
 
 </style>

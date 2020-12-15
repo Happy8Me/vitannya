@@ -27,9 +27,11 @@ h3
     text-align: left
     border-bottom: 1px dashed #808080
     padding-bottom: 3px
+    letter-spacing: .5px
 p
-    font-size: 11px
+    font-size: 12px
     text-align: justify
     margin: 5px 0
     text-indent: 10px
+    line-height: 21px
 </style>

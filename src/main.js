@@ -7,12 +7,6 @@ import "core-js/stable"; //polyfill for IE
 import "regenerator-runtime/runtime"; //polyfill for IE
 import 'whatwg-fetch'  //Fetch polyfill for IE
 
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default.css'
-
-Vue.use(VueMaterial)
-
 Vue.config.productionTip = false
 
 new Vue({

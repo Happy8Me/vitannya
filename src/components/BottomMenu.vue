@@ -1,10 +1,7 @@
 <template>
-  <div>
-    <div class="md-layout-item md-xsmall-hide ">
-        <md-button v-for="item in menuItems" :key="item.path" :to="item.path" class="md-primary">{{ item.title }} </md-button> 
+    <div class="btn-group">
+        <router-link v-for="item in menuItems" :key="item.path" :to="item.path" class="btn">{{ item.title }} </router-link> 
     </div>
-
-</div>
 </template>    
 
 <script>
@@ -20,9 +17,26 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-a
-    height: 12vh
-    box-shadow: 0px 0px 5px #d2e4f2
-    border-radius: 50%
-    min-width: 120px
+.btn-group
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin: 20px 0
+.btn
+    border: 0
+    background-color: #ffffff
+    margin: 0 15px
+    color: #54adf5
+    cursor: pointer
+    transition: .2s
+    font-size: 15px
+    &:hover
+        color: #ffffff
+        text-shadow: 0px 1px 2px #000000
+    &:focus
+        outline: none  
+@media (max-width: 500px) 
+    .btn-group
+        display: none
 </style>

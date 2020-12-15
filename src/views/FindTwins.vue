@@ -87,7 +87,7 @@ export default {
         this.matchedCards = [];
         this.busy = true; 
         this.audioBg = new Audio(this.bgMusic);
-        this.audioBg.volume = 0.03;
+        this.audioBg.volume = 0.08;
         this.audioBg.loop = true;
         this.audioMatch = new Audio(this.matchMusic);
         this.audioFlip = new Audio(this.flipMusic);
@@ -206,9 +206,8 @@ export default {
         this.timeRemaining = null;
         this.stopBgMusic();
         next()
-    } else {
-        next(false)
-    }
+    } 
+    next()
   }
 }
 
@@ -233,12 +232,18 @@ export default {
         font-size: 6em 
  
 .stopMusic  
-    border: 2px solid 
-    border-radius: 50% 
-    padding: 5px 5px 5px 9px 
-    font-size: 20px 
-    margin: 20px 
-    transition: .5s 
+    border: 2px solid
+    border-radius: 50%
+    width: 30px
+    font-size: 15px
+    display: flex
+    height: 30px
+    transition: .5s
+    justify-content: center
+    align-items: center
+    padding-left: 3px
+    margin-left: 15px
+    cursor: pointer
     &:before  
         content: '\25BA' 
     &:hover 
@@ -266,8 +271,8 @@ export default {
 
 .overlay-text 
     display: none 
-    position: absolute 
-    top: 65px 
+    position: fixed 
+    top: 0
     left: 0 
     right: 0 
     bottom: 0 
@@ -277,6 +282,7 @@ export default {
     color: #97bc66 
     font-family: 'Poiret One', cursive 
     padding-top: 300px
+    height: 100%
 
 .overlay-text-small 
     font-size: .3em 
@@ -294,14 +300,8 @@ export default {
     to 
         background-color: rgba(0, 0, 0, .9)
         font-size: 8em
- 
-@media only screen and (max-width: 960px) and (min-width: 600px)
-    .overlay-text 
-       top: 49px  
-
+        
 @media (max-width: 600px) 
-    .overlay-text 
-       top: 57px  
     .title h1  
         font-size: 3em 
 
@@ -313,7 +313,3 @@ export default {
             background-color: rgba(0, 0, 0, .9)
             font-size: 3em
 </style>
-
-
-https://matthiashager.com/tardis/vuejs-media-player-tutorial
-https://habr.com/ru/company/ruvds/blog/337732/

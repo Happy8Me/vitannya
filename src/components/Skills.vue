@@ -23,7 +23,7 @@ export default {
     name: 'Skills',
     data(){
         return{
-            skills: ['JavaScript / ES6', 'Vue.js / Vuex', 'Git', 'REST', 'HTML5', 'CSS3/SASS/SCSS', 'AJAX', 'Node.js (basic)', 'TypeScript', 'Photoshop / Avocode'],
+            skills: ['JavaScript / ES6', 'Vue.js / Vuex / NUXT.js', 'Git', 'REST', 'AJAX', 'HTML5', 'CSS3/SASS/SCSS', 'Node.js (basic)', 'TypeScript', 'Photoshop / Avocode'],
             languages: [{name: 'Ukrainian', level: 'native'}, {name: 'Russian', level: 'native'}, {name: 'English', level: 'advanced'}],
         }
     }
@@ -37,17 +37,18 @@ ul
     color: black
     p
         color: black
-        font-size: 11px
+        font-size: 12px
         text-align: left
         margin: 3px 0
+        line-height: 21px
 h3
     font-size: 16px
     font-weight: bold 
-    margin: 5px 0
     color: black
     text-align: left
     border-bottom: 1px dashed #808080
-    margin: 15px 0 20px 0   
+    margin: 25px 0 20px 0   
     padding-bottom: 3px
+    letter-spacing: .5px
 
 </style>

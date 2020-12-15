@@ -20,11 +20,13 @@ export default {
 h3
     font-size: 16px
     font-weight: bold 
-    margin: 30px 0 20px 0
+    letter-spacing: .5px
+    margin: 40px 0 20px 0
     text-align: left
     border-bottom: 1px dashed #808080
     padding-bottom: 3px
 p
-    font-size: 11px
+    font-size: 12px
     text-align: justify
+    line-height: 21px
 </style>

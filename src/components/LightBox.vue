@@ -61,6 +61,7 @@ export default {
   display: flex
   justify-content: center
   margin-top: 8%
+  flex-wrap: wrap 
 .image-holder
   display: flex
   margin: 20px
